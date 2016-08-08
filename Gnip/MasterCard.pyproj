@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{c5c236ee-8a1d-4e60-a1ee-56265848b6f6}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>brillio\com\test\Timing.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="brillio\com\loggings\log_conf.py" />
+    <Compile Include="brillio\com\loggings\__init__.py" />
+    <Compile Include="brillio\com\outputs\__init__.py" />
+    <Compile Include="brillio\com\resources\db\__init__.py" />
+    <Compile Include="brillio\com\resources\__init__.py" />
+    <Compile Include="brillio\com\src\est.py" />
+    <Compile Include="brillio\com\src\live\Collector.py" />
+    <Compile Include="brillio\com\src\live\ConfigReader.py" />
+    <Compile Include="brillio\com\src\live\KeywordParser.py" />
+    <Compile Include="brillio\com\src\live\preprocess\TwitterPreProcess.py" />
+    <Compile Include="brillio\com\src\live\preprocess\__init__.py" />
+    <Compile Include="brillio\com\src\live\TwitterAuth.py" />
+    <Compile Include="brillio\com\src\live\__init__.py" />
+    <Compile Include="brillio\com\src\static\downloaders\Gnip.py" />
+    <Compile Include="brillio\com\src\static\downloaders\GnipDataDownloader.py" />
+    <Compile Include="brillio\com\src\static\downloaders\__init__.py" />
+    <Compile Include="brillio\com\src\static\parsers\GinipJsonParser.py" />
+    <Compile Include="brillio\com\src\static\parsers\__init__.py" />
+    <Compile Include="brillio\com\src\static\preprocess\__init__.py" />
+    <Compile Include="brillio\com\src\static\__init__.py" />
+    <Compile Include="brillio\com\src\__init__.py" />
+    <Compile Include="brillio\com\test\aiuth_test.py" />
+    <Compile Include="brillio\com\test\CollectorTest.py" />
+    <Compile Include="brillio\com\test\FlatJsonTest.py" />
+    <Compile Include="brillio\com\test\garbage\fs.py" />
+    <Compile Include="brillio\com\test\garbage\__init__.py" />
+    <Compile Include="brillio\com\test\GnipParserTest.py" />
+    <Compile Include="brillio\com\test\HelperTest.py" />
+    <Compile Include="brillio\com\test\LogTester.py" />
+    <Compile Include="brillio\com\test\MongoDbtest.py" />
+    <Compile Include="brillio\com\test\paths.py" />
+    <Compile Include="brillio\com\test\static_Test.py" />
+    <Compile Include="brillio\com\test\Timing.py" />
+    <Compile Include="brillio\com\test\__init__.py" />
+    <Compile Include="brillio\com\utils\DbHelper.py" />
+    <Compile Include="brillio\com\utils\__init__.py" />
+    <Compile Include="brillio\com\__init__.py" />
+    <Compile Include="brillio\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="brillio" />
+    <Folder Include="brillio\com" />
+    <Folder Include="brillio\com\loggings" />
+    <Folder Include="brillio\com\outputs" />
+    <Folder Include="brillio\com\resources" />
+    <Folder Include="brillio\com\resources\db" />
+    <Folder Include="brillio\com\src" />
+    <Folder Include="brillio\com\src\live" />
+    <Folder Include="brillio\com\src\live\preprocess" />
+    <Folder Include="brillio\com\src\static" />
+    <Folder Include="brillio\com\src\static\downloaders" />
+    <Folder Include="brillio\com\src\static\parsers" />
+    <Folder Include="brillio\com\src\static\preprocess" />
+    <Folder Include="brillio\com\test" />
+    <Folder Include="brillio\com\test\garbage" />
+    <Folder Include="brillio\com\utils" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
